@@ -12,7 +12,7 @@ const user = {
 };
 
 function App() {
-  const [todos, setTodos] = useState<Array<TodoType>>([]);
+  const [todos, setTodos] = useState<TodoType[]>([]);
   const onClickFetchData = () => {
     axios
       .get<Array<TodoType>>("https://jsonplaceholder.typicode.com/todos")
